@@ -1,7 +1,7 @@
 var PLUGIN_NAME = "cordova-plugin-androidx";
 var enableAndroidX = "android.useAndroidX=true";
 var enableJetifier = "android.enableJetifier=true";
-var javaHeapSpace = "org.gradle.jvmargs=-Xmx4608m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError";
+var javaHeapSpace = "org.gradle.jvmargs=-XX:MaxPermSize=1024m -Xms1024m -Xmx4096m -XX:ReservedCodeCacheSize=1024m";
 var gradlePropertiesPath = "./platforms/android/gradle.properties";
 
 var deferral, fs, path;
