@@ -35,11 +35,9 @@ function run() {
         gradleProperties += "\n" + onDemand;
         gradleProperties = gradleProperties.toString();
         if(!gradleProperties.match(enableAndroidX)){
-            gradleProperties += "\n" + enableAndroidX;
             updatedGradleProperties = true;
         }
         if(!gradleProperties.match(enableJetifier)){
-            gradleProperties += "\n" + enableJetifier;
             updatedGradleProperties = true;
         }
         if(updatedGradleProperties){
